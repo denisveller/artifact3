@@ -21,23 +21,36 @@ a.bilingual-nav{
 h1.center{
     text-align: center;
 }
-.maintext{
-    flex-grow: 1;
+.container{
     float: right;
+    max-width: 100%;
 }
-
-.side{
+.main-text{
+    padding-right: 10%;
     padding-left: 5%;
 }
 
 .timeline{
-    width: 34%;
+    width: 5%;
     float: left;
-    background-color: gray;
+    background-color: RGB(19,20,20);
     align-items: stretch;
     height: 100%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: yellow;
+    border-left-style: hidden;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
 }
 .wrapper{
     align-items: stretch;
     display: flex;
+}
+p.filler{
+    color: RGB(19,20,20);
+    opacity: 0;
+}
+div.filler{
+    float:left;
 }
