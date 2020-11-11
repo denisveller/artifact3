@@ -11,6 +11,12 @@ hr.bilingual-nav{
     background: white;
     margin: 1px 0 1px 0;
 }
+hr.bilingual{
+    height: 1px;
+    background: white;
+    margin: 1px 0 1px 0;
+    text-align: center;
+}
 a.bilingual-nav{
     text-align: center;
 }
@@ -20,6 +26,14 @@ a.bilingual-nav{
 }
 h1.center{
     text-align: center;
+}
+div.poetry{
+    text-align: center;
+    padding-bottom: 5%;
+}
+div.bilingual-heading{
+    max-width: 70%;
+    margin: 0 auto 7% auto;
 }
 /*
 .timeline{
