@@ -1,0 +1,43 @@
+body{
+    background-color: RGB(19,20,20);
+    color: white;
+}
+.centered-nav{
+    width: 100%;
+    text-align: center;
+}
+hr.bilingual-nav{
+    height: 1px;
+    background: white;
+    margin: 1px 0 1px 0;
+}
+a.bilingual-nav{
+    text-align: center;
+}
+.dark-theme{
+    background-color: RGB(19,20,20);
+    color: white;
+}
+h1.center{
+    text-align: center;
+}
+.maintext{
+    flex-grow: 1;
+    float: right;
+}
+
+.side{
+    padding-left: 5%;
+}
+
+.timeline{
+    width: 34%;
+    float: left;
+    background-color: gray;
+    align-items: stretch;
+    height: 100%;
+}
+.wrapper{
+    align-items: stretch;
+    display: flex;
+}
