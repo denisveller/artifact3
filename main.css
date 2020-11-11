@@ -21,15 +21,7 @@ a.bilingual-nav{
 h1.center{
     text-align: center;
 }
-.container{
-    float: right;
-    max-width: 100%;
-}
-.main-text{
-    padding-right: 10%;
-    padding-left: 5%;
-}
-
+/*
 .timeline{
     width: 5%;
     float: left;
@@ -43,10 +35,6 @@ h1.center{
     border-top-style: hidden;
     border-bottom-style: hidden;
 }
-.wrapper{
-    align-items: stretch;
-    display: flex;
-}
 p.filler{
     color: RGB(19,20,20);
     opacity: 0;
@@ -54,3 +42,4 @@ p.filler{
 div.filler{
     float:left;
 }
+*/

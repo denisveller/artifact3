@@ -1,3 +1,4 @@
+/*
 var p = document.getElementById("fillUp");
 var h = document.body.scrollHeight;
 const hc = h;
@@ -6,3 +7,4 @@ while (h==hc){
     p.innerHTML = temp + 'g<br>'
     var h = document.body.scrollHeight;
 }
+*/
