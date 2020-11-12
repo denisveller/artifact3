@@ -52,3 +52,21 @@ div.bilingual-heading{
 .author{
     text-align:left;
 }
+.active{
+    display: inline !important;
+}
+.passive{
+    display: none;
+    background: transparent !important;
+}
+.passive:hover{
+    background: transparent !important;
+    color: white;
+}
+.last{
+    display: none !important;
+}
+.t-head{
+    color: white;
+    background: transparent !important;
+}
