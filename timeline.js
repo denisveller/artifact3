@@ -8,3 +8,4 @@ while (h==hc){
     var h = document.body.scrollHeight;
 }
 */
+$('body').scrollspy({ target: '#navbar-example3' })
