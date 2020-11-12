@@ -42,12 +42,12 @@ div.bilingual-heading{
     width: 25%;
 }
 .right{
-    float: right;
     width: 75%;
+    margin-left: auto;
 }
 .timeline{
     height: 100vh;
-    background-color: RGB(29,30,30);
+    background-color: rgb(36, 39, 42) !important;
 }
 .timeline-body{
     padding-left: 10%;
