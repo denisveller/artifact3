@@ -12,10 +12,7 @@ hr.bilingual-nav{
     background: white;
     margin: 1px 0 1px 0;
 }
-hr.bilingual{
-    height: 1px;
-    background: white;
-    margin: 1px 0 1px 0;
+.underline{
     text-align: center;
 }
 a.bilingual-nav{
@@ -51,4 +48,7 @@ div.bilingual-heading{
 }
 .timeline-body{
     padding-left: 10%;
+}
+.author{
+    text-align:left;
 }
