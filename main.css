@@ -37,6 +37,7 @@ div.bilingual-heading{
 .left{
     float: left;
     width: 25%;
+    display: inline;
 }
 .right{
     width: 75%;
@@ -79,11 +80,18 @@ div.bilingual-heading{
 .full-width{
     width: 100%;
 }
+.timeline-toggle{
+    display: none;
+}
 @media only screen and (max-width: 991px){
     .left{
         display: none;
     }
     .right{
         width: 100%;
+    }
+    .timeline-toggle{
+        color: white;
+        display: block;
     }
 }
