@@ -70,3 +70,12 @@ div.bilingual-heading{
     color: white;
     background: transparent !important;
 }
+.blurb{
+    padding: 5%;
+    border: 1px;
+    border-style: solid;
+    width: 100%;
+}
+.full-width{
+    width: 100%;
+}
