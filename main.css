@@ -67,6 +67,10 @@ div.bilingual-heading{
 .last{
     display: none !important;
 }
+.t-head:hover{
+    background: transparent !important;
+    color: grey;
+}
 .t-head{
     color: white;
     background: transparent !important;
