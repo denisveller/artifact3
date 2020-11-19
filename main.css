@@ -134,11 +134,11 @@ span.accent{
     background-color: rgb(200,0,0);
 }
 .ispy{
-    margin-top: -10%;
-    padding-top: 10%;
+    margin-top: -15%;
+    padding-top: 15%;
 }
 .ispybottom{
-    padding-bottom: 0%;
+    margin-bottom: 100px;
 }
 @media only screen and (max-width: 1500px){
     .poetron{
