@@ -68,6 +68,7 @@ div.bilingual-heading{
 }
 .last{
     display: none !important;
+    opacity: 0;
 }
 .t-head:hover{
     background: transparent !important;
@@ -99,6 +100,17 @@ div.bilingual-heading{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+nav.accent{
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(170,0,0);
+    border-bottom-style: solid;
+}
+hr.accent{
+    background: rgb(170,0,0);
+}
+span.accent{
+    color: rgb(170,0,0) !important;
 }
 @media only screen and (max-width: 1500px){
     .poetron{
