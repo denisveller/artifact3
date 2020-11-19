@@ -12,3 +12,7 @@ function toggleTimelineVisibility() {
         x.style.width = "25%";
     }
 }
+function goToTop() {
+    window.scrollTo(0, 0);
+    console.log(0);
+}

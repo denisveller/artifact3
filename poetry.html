@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark accent">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark accent" id='start'>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -41,248 +41,432 @@
       </ul>
     </div>
   </nav>
-  <div class="jumbotron jumbotron-fluid dark-theme">
-    <div class="container main-text">
-      <div class="bilingual-heading">
-        <h1 class="display-4 center">Poetry <span class="accent">|</span> Поэзия</h1>
-      </div>
-      <div class="poembox">
-        <div class="">
-          <div id="carousel1" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel1" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-interval="60000">
-                <div class="d-block w-100 poetry">
-                  <p class="poetry">
-                  <h4>Памяти 19 июля 1914</h4>
-                  <span class="accent">____________________</span><br><br>
-                  Мы на сто лет состарились, и это<br>
-                  Тогда случилось в час один:<br>
-                  Короткое уже кончалось лето,<br>
-                  Дымилось тело вспаханных равнин.<br><br>
+  <div class="sticky-top timeline left" id="timeline">
+    <nav id="navbar-example3" class="navbar navbar-dark bg-dark timeline">
+      <nav class="nav nav-pills flex-column full-width">
+        <a class="nav-link" style="display: none;" onclick="toggleTimelineVisibility()" id="return">
+          <h5>Hide Timeline</h5>
+        </a>
+        <a class="nav-link t-head" href="#p0" onclick="this.href='#start'">
+          <h4>Poetry Analysis</h4>
+        </a>
+        <a class="nav-link passive" href="#p0">
+          <div class="blurb">
+            This section is not meant to explain every aspect of the poems, but rather to provide context and useful
+            information that will help the viewer better understand Akhmatova’s work. We recommend you read the
+            biography before you take a look at these. Akhmatova’s poems are insightful and touch a reader’s heart
+            without context, but with context, a reader truly understands Akhmatova and through Akhmatova, the
+            sentiments of an entire nation.
+          </div>
+        </a>
+        <a class="nav-link passive" href="#start">
+          <div class="blurb">
+            This section is not meant to explain every aspect of the poems, but rather to provide context and useful
+            information that will help the viewer better understand Akhmatova’s work. We recommend you read the
+            biography before you take a look at these. Akhmatova’s poems are insightful and touch a reader’s heart
+            without context, but with context, a reader truly understands Akhmatova and through Akhmatova, the
+            sentiments of an entire nation.
+          </div>
+        </a>
+        <a class="nav-link t-head" href="#p1">
+          <h5>In Memoriam, July 19, 1914</h5>
+        </a>
+        <a class="nav-link passive" href="#p1">
+          <div class="blurb">
+            As a young woman who had already experienced the political, social, and economic turmoil of Russia at the
+            turn of the century, Anna Akhmatova grieved over the outbreak of World War I and especially her country’s
+            involvement in it. The title of the poem is a reference to the day of Germany’s declaration of war against
+            Russia in the Julian Calendar (the date is August 1, 1914 in the Gregorian Calendar). The anti-war sentiment
+            is evident throughout the poem as the characterization of war is malicious and unforgiving. The poem itself
+            was written in 1916, and at this point in the war, Russia’s war effort was beginning to show signs of
+            failure. This is one of the poems that marks Akhmatova’s transition from a normal poet to a sort of social
+            prophet.
+          </div>
+        </a>
+        <a class="nav-link t-head" href="#p2">
+          <h5>Lot's Wife</h5>
+        </a>
+        <a class="nav-link passive" href="#p2">
+          <div class="blurb">
+            This poem refers to the famous story from the Bible. In the story, Lot and his family are told to leave the
+            Sodom by two angels before impending disaster strikes. However, they are told not to look back at the city
+            as they flee. Lot’s family escapes the city, but Lot’s wife looks back. God then promptly turns her into a
+            pillar of salt for disobeying his orders. Akhmatova is very sympathetic towards Lot’s wife in the poem,
+            depicting her as a woman who simply misses her home and made a simple mistake that cost her her life. During
+            this time in Akhmatova’s life, the early 1920s, she was coming to terms with the fact that the Bolsheviks
+            were probably going to remain in power for the rest of her life, and had to let go of the past to accept the
+            future. The St. Petersburg of Akhmatova’s youth was far different from the Petrograd of her present.
+            Akhmatova drew clear parallels between herself and Lot’s wife in the poem, and also between St. Petersburg
+            and Sodom.
+          </div>
+        </a>
+        <a class="nav-link t-head" href="#p3">
+          <h5>When in Suicidal Anguish</h5>
+        </a>
+        <a class="nav-link passive" href="#p3">
+          <div class="blurb">
+            Written in 1918, When in Suicidal Anguish depicts the conundrum Akhmatova faced as chaos raged across Russia
+            and the Bolsheviks rose to power. Many of her contemporaries were fleeing the country, and Akhmatova herself
+            was tempted by the idea. Ultimately she decided to stay in the country as she saw it as a sin to even
+            consider leaving her birthplace for forever, seen in the final stanza of the poem. The first stanza
+            references the Bolsheviks’ capitulation to the German Empire in the treaty of Brest-Litovsk.
+          </div>
+        </a>
+        <a class="nav-link t-head" href="#p4">
+          <h5>p4</h5>
+        </a>
+        <a class="nav-link passive" href="#p4">
+          <div class="blurb">
+            p4 analisis
+          </div>
+        </a>
 
-                  Вдруг запестрела тихая дорога,<br>
-                  Плач полетел, серебряно звеня...<br>
-                  Закрыв лицо, я умоляла Бога<br>
-                  До первой битвы умертвить меня.<br><br>
-
-                  Из памяти, как груз отныне лишний,<br>
-                  Исчезли тени песен и страстей.<br>
-                  Ей — опустевшей — приказал Всевышний<br>
-                  Стать страшной книгой грозовых вестей.<br>
-                  <span class="accent">____________________</span><br></br>
-                  <small>-Анна Ахматова</small>
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item" data-interval="60000">
-                <div class="d-block w-100 poetry">
-                  <p class="poetry">
-                  <h4>In Memoriam, July 19, 1914</h4>
-                  <span class="accent">____________________</span><br></br>
-                  We aged a hundred years and this descended<br>
-                  In just one hour, as at a stroke.<br>
-                  The summer had been brief and now was ended;<br>
-                  The body of the ploughed plains lay in smoke.<br><br>
-
-                  The hushed road burst in colors then, a soaring<br>
-                  Lament rose, ringing silver like a bell.<br>
-                  And so I covered up my face, imploring<br>
-                  God to destroy me before battle fell.<br><br>
-
-                  And from my memory the shadows vanished<br>
-                  Of songs and passions—burdens I'd not need.<br>
-                  The Almighty bade it be—with all else banished—<br>
-                  A book of portents terrible to read.<br>
-                  <span class="accent">____________________</span><br></br>
-                  <small>-Anna Akhmatova</small>
-                  </p>
-                </div>
-              </div>
-
+        <a class="nav-link passive last" href="#item-4">filler</a>
+      </nav>
+    </nav>
+  </div>
+  <div data-spy="scroll" data-target="#navbar-example3" data-offset="0"
+    class="jumbotron jumbotron-fluid scrollspy-example dark-theme right">
+    <div class="container timeline-body">
+      <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+        <div class="jumbotron jumbotron-fluid dark-theme">
+          <div class="container main-text">
+            <div class="bilingual-heading">
+              <h1 class="display-4 center" id="start">Poetry <span class="accent">|</span> Поэзия</h1>
             </div>
-            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+
+            <div class="poembox">
+              <div id="p1" class='ispy'>
+                <div id="carousel1" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel1" data-slide-to="1"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="60000">
+                      <div class="d-block w-100 poetry">
+                        <p class="poetry">
+                        <h4>Памяти 19 июля 1914</h4>
+                        <span class="accent">____________________</span><br><br>
+                        Мы на сто лет состарились, и это<br>
+                        Тогда случилось в час один:<br>
+                        Короткое уже кончалось лето,<br>
+                        Дымилось тело вспаханных равнин.<br><br>
+
+                        Вдруг запестрела тихая дорога,<br>
+                        Плач полетел, серебряно звеня...<br>
+                        Закрыв лицо, я умоляла Бога<br>
+                        До первой битвы умертвить меня.<br><br>
+
+                        Из памяти, как груз отныне лишний,<br>
+                        Исчезли тени песен и страстей.<br>
+                        Ей — опустевшей — приказал Всевышний<br>
+                        Стать страшной книгой грозовых вестей.<br>
+                        <span class="accent">____________________</span><br></br>
+                        <small>-Анна Ахматова</small>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-interval="60000">
+                      <div class="d-block w-100 poetry">
+                        <p class="poetry">
+                        <h4>In Memoriam, July 19, 1914</h4>
+                        <span class="accent">____________________</span><br></br>
+                        We aged a hundred years and this descended<br>
+                        In just one hour, as at a stroke.<br>
+                        The summer had been brief and now was ended;<br>
+                        The body of the ploughed plains lay in smoke.<br><br>
+
+                        The hushed road burst in colors then, a soaring<br>
+                        Lament rose, ringing silver like a bell.<br>
+                        And so I covered up my face, imploring<br>
+                        God to destroy me before battle fell.<br><br>
+
+                        And from my memory the shadows vanished<br>
+                        Of songs and passions—burdens I'd not need.<br>
+                        The Almighty bade it be—with all else banished—<br>
+                        A book of portents terrible to read.<br>
+                        <span class="accent">____________________</span><br></br>
+                        <small>-Anna Akhmatova</small>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div id="p2" class='ispy'>
+                <div id="c3" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#c3" data-slide-to="0" class="active"></li>
+                    <li data-target="#c3" data-slide-to="1"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="60000">
+                      <div class="d-block w-100 poetry">
+                        <p class="poetry">
+                        <h4>Лотова жена</h4>
+                        <span class="accent">____________________</span><br></br>
+                        И праведник шел за посланником Бога,<br>
+                        Огромный и светлый, по черной горе.<br>
+                        Но громко жене говорила тревога:<br>
+                        Не поздно, ты можешь еще посмотреть<br><br>
+
+                        На красные башни родного Содома,<br>
+                        На площадь, где пела, на двор, где пряла,<br>
+                        На окна пустые высокого дома,<br>
+                        Где милому мужу детей родила.<br><br>
+
+                        Взглянула – и, скованы смертною болью,<br>
+                        Глаза ее больше смотреть не могли;<br>
+                        И сделалось тело прозрачною солью,<br>
+                        И быстрые ноги к земле приросли.<br><br>
+
+                        Кто женщину эту оплакивать будет?<br>
+                        Не меньшей ли мнится она из утрат?<br>
+                        Лишь сердце мое никогда не забудет<br>
+                        Отдавшую жизнь за единственный взгляд.<br><br>
+
+
+                        <span class="accent">____________________</span><br></br>
+                        <small>-Анна Ахматова</small>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-interval="60000">
+                      <div class="d-block w-100 poetry">
+                        <p class="poetry">
+                        <h4>Lot's Wife</h4>
+                        <span class="accent">____________________</span><br></br>
+                        And the just man falls in step behind God’s messenger,<br>
+                        light-colored, vast, his radiance on the black grief-mountain,<br>
+                        while disquiet speaks uneasily to the just man’s wife:<br>
+                        “No, now is not too late to look again<br><br>
+
+                        at Sodom, at your home, its beautiful red towers<br>
+                        on the plain, the court-yard where you sang — spinning —<br>
+                        the blank openings in the empty windows of the tall house<br>
+                        where you bore your children for your husband.”<br><br>
+
+                        Look — a gaze — constrained by dying pain<br>
+                        her eyes enlarge but do not see a grave,<br>
+                        her body fused into translucent salt,<br>
+                        her quick feet rooted to the earth.<br>
+
+                        And who will mourn this woman<br>
+                        or her trivial loss, this woman never<br>
+                        absent from my heart — the crushed<br>
+                        life in a single glance?<br>
+                        <span class="accent">____________________</span><br></br>
+                        <small>-Anna Akhmatova</small>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <a class="carousel-control-prev" href="#c3" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#c3" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div id="p3" class='ispy'>
+                <div id="c2" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#c2" data-slide-to="0" class="active"></li>
+                    <li data-target="#c2" data-slide-to="1"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="60000">
+                      <div class="d-block w-100 poetry">
+                        <p class="poetry">
+                        <h4>Когда в тоске самоубийства</h4>
+                        <span class="accent">____________________</span><br></br>
+                        Когда в тоске самоубийства<br>
+                        Народ гостей немецких ждал,<br>
+                        И дух суровый византийства<br>
+                        От русской Церкви отлетал,<br><br>
+
+                        Когда приневская столица,<br>
+                        Забыв величие свое,<br>
+                        Как опьяненная блудница,<br>
+                        Не знала, кто берет ее,<br><br>
+
+                        Мне голос был. Он звал утешно,<br>
+                        Он говорил: «Иди сюда,<br>
+                        Оставь свой край, глухой и грешный,<br>
+                        Оставь Россию навсегда.<br>
+                        Я кровь от рук твоих отмою,<br>
+                        Из сердца выну черный стыд,<br>
+                        Я новым именем покрою<br>
+                        Боль поражений и обид».<br><br>
+
+                        Но равнодушно и спокойно<br>
+                        Руками я замкнула слух,<br>
+                        Чтоб этой речью недостойной<br>
+                        Не осквернился скорбный дух.<br>
+                        <span class="accent">____________________</span><br></br>
+                        <small>-Анна Ахматова</small>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-interval="60000">
+                      <div class="d-block w-100 poetry">
+                        <p class="poetry">
+                        <h4>When in Suicidal Anguish</h4>
+                        <span class="accent">____________________</span><br></br>
+                        When in suicidal anguish,<br>
+                        the people waited for the German guests,<br>
+                        And the Byzantian, stern spirit<br>
+                        vanished from the Russian church,<br><br>
+
+                        When the capital on the Neva,<br>
+                        forgetful of its grandeur,<br>
+                        like a drunken harlot,<br>
+                        knew not which one was taking her—<br><br>
+
+                        I heard a voice. It called consolingly, <br>
+                        It said, “Come here to me,<br>
+                        and leave your backward, sinful land,<br>
+                        abandon Russia for all time.<br>
+
+                        I'll wash the blood clean from your hands, <br>
+                        I'll take the black shame from your heart, <br>
+                        And with a new name<br>
+                        I will cover the pain of defeats and insults.”<br><br>
+
+                        But indifferently and calmly <br>
+                        I covered up my ears <br>
+                        so this dishonorable speech <br>
+                        could not defile my grieving<br>
+                        spirit.<br>
+                        <span class="accent">____________________</span><br></br>
+                        <small>-Anna Akhmatova</small>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <a class="carousel-control-prev" href="#c2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#c2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div id="p4" class='ispy ispybottom'>
+                <div id="c2" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#c2" data-slide-to="0" class="active"></li>
+                    <li data-target="#c2" data-slide-to="1"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="60000">
+                      <div class="d-block w-100 poetry">
+                        <p class="poetry">
+                        <h4>Когда в тоске самоубийства</h4>
+                        <span class="accent">____________________</span><br></br>
+                        Когда в тоске самоубийства<br>
+                        Народ гостей немецких ждал,<br>
+                        И дух суровый византийства<br>
+                        От русской Церкви отлетал,<br><br>
+
+                        Когда приневская столица,<br>
+                        Забыв величие свое,<br>
+                        Как опьяненная блудница,<br>
+                        Не знала, кто берет ее,<br><br>
+
+                        Мне голос был. Он звал утешно,<br>
+                        Он говорил: «Иди сюда,<br>
+                        Оставь свой край, глухой и грешный,<br>
+                        Оставь Россию навсегда.<br>
+                        Я кровь от рук твоих отмою,<br>
+                        Из сердца выну черный стыд,<br>
+                        Я новым именем покрою<br>
+                        Боль поражений и обид».<br><br>
+
+                        Но равнодушно и спокойно<br>
+                        Руками я замкнула слух,<br>
+                        Чтоб этой речью недостойной<br>
+                        Не осквернился скорбный дух.<br>
+                        <span class="accent">____________________</span><br></br>
+                        <small>-Анна Ахматова</small>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-interval="60000">
+                      <div class="d-block w-100 poetry">
+                        <p class="poetry">
+                        <h4>When in Suicidal Anguish</h4>
+                        <span class="accent">____________________</span><br></br>
+                        When in suicidal anguish,<br>
+                        the people waited for the German guests,<br>
+                        And the Byzantian, stern spirit<br>
+                        vanished from the Russian church,<br><br>
+
+                        When the capital on the Neva,<br>
+                        forgetful of its grandeur,<br>
+                        like a drunken harlot,<br>
+                        knew not which one was taking her—<br><br>
+
+                        I heard a voice. It called consolingly, <br>
+                        It said, “Come here to me,<br>
+                        and leave your backward, sinful land,<br>
+                        abandon Russia for all time.<br>
+
+                        I'll wash the blood clean from your hands, <br>
+                        I'll take the black shame from your heart, <br>
+                        And with a new name<br>
+                        I will cover the pain of defeats and insults.”<br><br>
+
+                        But indifferently and calmly <br>
+                        I covered up my ears <br>
+                        so this dishonorable speech <br>
+                        could not defile my grieving<br>
+                        spirit.<br>
+                        <span class="accent">____________________</span><br></br>
+                        <small>-Anna Akhmatova</small>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <a class="carousel-control-prev" href="#c2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#c2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="">
-          <div id="c3" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#c3" data-slide-to="0" class="active"></li>
-              <li data-target="#c3" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-interval="60000">
-                <div class="d-block w-100 poetry">
-                  <p class="poetry">
-                  <h4>Лотова жена</h4>
-                  <span class="accent">____________________</span><br></br>
-                  И праведник шел за посланником Бога,<br>
-                  Огромный и светлый, по черной горе.<br>
-                  Но громко жене говорила тревога:<br>
-                  Не поздно, ты можешь еще посмотреть<br><br>
-
-                  На красные башни родного Содома,<br>
-                  На площадь, где пела, на двор, где пряла,<br>
-                  На окна пустые высокого дома,<br>
-                  Где милому мужу детей родила.<br><br>
-
-                  Взглянула – и, скованы смертною болью,<br>
-                  Глаза ее больше смотреть не могли;<br>
-                  И сделалось тело прозрачною солью,<br>
-                  И быстрые ноги к земле приросли.<br><br>
-
-                  Кто женщину эту оплакивать будет?<br>
-                  Не меньшей ли мнится она из утрат?<br>
-                  Лишь сердце мое никогда не забудет<br>
-                  Отдавшую жизнь за единственный взгляд.<br><br>
 
 
-                  <span class="accent">____________________</span><br></br>
-                  <small>-Анна Ахматова</small>
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item" data-interval="60000">
-                <div class="d-block w-100 poetry">
-                  <p class="poetry">
-                  <h4>Lot's Wife</h4>
-                  <span class="accent">____________________</span><br></br>
-                  And the just man falls in step behind God’s messenger,<br>
-                  light-colored, vast, his radiance on the black grief-mountain,<br>
-                  while disquiet speaks uneasily to the just man’s wife:<br>
-                  “No, now is not too late to look again<br><br>
-
-                  at Sodom, at your home, its beautiful red towers<br>
-                  on the plain, the court-yard where you sang — spinning —<br>
-                  the blank openings in the empty windows of the tall house<br>
-                  where you bore your children for your husband.”<br><br>
-
-                  Look — a gaze — constrained by dying pain<br>
-                  her eyes enlarge but do not see a grave,<br>
-                  her body fused into translucent salt,<br>
-                  her quick feet rooted to the earth.<br>
-
-                  And who will mourn this woman<br>
-                  or her trivial loss, this woman never<br>
-                  absent from my heart — the crushed<br>
-                  life in a single glance?<br>
-                  <span class="accent">____________________</span><br></br>
-                  <small>-Anna Akhmatova</small>
-                  </p>
-                </div>
-              </div>
-
-            </div>
-            <a class="carousel-control-prev" href="#c3" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#c3" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-        <div class="">
-          <div id="c2" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#c2" data-slide-to="0" class="active"></li>
-              <li data-target="#c2" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-interval="60000">
-                <div class="d-block w-100 poetry">
-                  <p class="poetry">
-                  <h4>Когда в тоске самоубийства</h4>
-                  <span class="accent">____________________</span><br></br>
-                  Когда в тоске самоубийства<br>
-                  Народ гостей немецких ждал,<br>
-                  И дух суровый византийства<br>
-                  От русской Церкви отлетал,<br><br>
-
-                  Когда приневская столица,<br>
-                  Забыв величие свое,<br>
-                  Как опьяненная блудница,<br>
-                  Не знала, кто берет ее,<br><br>
-
-                  Мне голос был. Он звал утешно,<br>
-                  Он говорил: «Иди сюда,<br>
-                  Оставь свой край, глухой и грешный,<br>
-                  Оставь Россию навсегда.<br>
-                  Я кровь от рук твоих отмою,<br>
-                  Из сердца выну черный стыд,<br>
-                  Я новым именем покрою<br>
-                  Боль поражений и обид».<br><br>
-
-                  Но равнодушно и спокойно<br>
-                  Руками я замкнула слух,<br>
-                  Чтоб этой речью недостойной<br>
-                  Не осквернился скорбный дух.<br>
-                  <span class="accent">____________________</span><br></br>
-                  <small>-Анна Ахматова</small>
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item" data-interval="60000">
-                <div class="d-block w-100 poetry">
-                  <p class="poetry">
-                  <h4>When in Suicidal Anguish</h4>
-                  <span class="accent">____________________</span><br></br>
-                  When in suicidal anguish,<br>
-                  the people waited for the German guests,<br>
-                  And the Byzantian, stern spirit<br>
-                  vanished from the Russian church,<br><br>
-
-                  When the capital on the Neva,<br>
-                  forgetful of its grandeur,<br>
-                  like a drunken harlot,<br>
-                  knew not which one was taking her—<br><br>
-
-                  I heard a voice. It called consolingly, <br>
-                  It said, “Come here to me,<br>
-                  and leave your backward, sinful land,<br>
-                  abandon Russia for all time.<br>
-
-                  I'll wash the blood clean from your hands, <br>
-                  I'll take the black shame from your heart, <br>
-                  And with a new name<br>
-                  I will cover the pain of defeats and insults.”<br><br>
-
-                  But indifferently and calmly <br>
-                  I covered up my ears <br>
-                  so this dishonorable speech <br>
-                  could not defile my grieving<br>
-                  spirit.<br>
-                  <span class="accent">____________________</span><br></br>
-                  <small>-Anna Akhmatova</small>
-                  </p>
-                </div>
-              </div>
-
-            </div>
-            <a class="carousel-control-prev" href="#c2" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#c2" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
+        </p>
+        <h5 id="p0" style="opacity: 0;">Item 4</h5>
       </div>
     </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
