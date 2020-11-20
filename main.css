@@ -158,17 +158,35 @@ span.accent{
     text-indent: -5%;
     padding-left: 5%;
 }
-img.rightimage{
+img{
+    max-width: 100%;
+    height: auto;
+}
+.rightimage{
+    padding-left: 2%;
+}
+.leftimage{
+    padding-right: 2%;
+}
+.rightfig{
     max-width: 50%;
     height: auto;
     float: right;
     padding-left: 2%;
 }
-img.leftimage{
+.rf{
+    font-size: smaller;
+    text-align: right;
+}
+.leftfig{
     max-width: 50%;
     height: auto;
     float: left;
     padding-right: 2%;
+}
+.lf{
+    font-size: smaller;
+    text-align: left;
 }
 @media only screen and (max-width: 1500px){
     .poetron{
@@ -193,26 +211,22 @@ img.leftimage{
         margin-left: auto;
         margin-right: auto;
     }
-    img.leftimage{
-        max-width: 100%;
+    .leftimage, .rightimage{
+        padding: 2% 0% 2% 0%;
+    }
+
+    .rightfig, .leftfig{
+        min-width: 100%;
         height: auto;
         float: none;
-        padding-left: 2%;
-        padding-bottom: 2%;
         margin-left: auto;
         margin-right: auto;
         display: block;
     }
-    img.rightimage{
-        max-width: 100%;
-        height: auto;
-        float: none;
-        padding-left: 2%;
-        padding-bottom: 2%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+    .rf, .lf{
+        text-align: left;
     }
+    
 }
 @media only screen and (min-width: 992px){
     .left{
