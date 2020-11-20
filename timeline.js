@@ -2,7 +2,8 @@ $('body').scrollspy({ target: '#navbar-example3' })
 function toggleTimelineVisibility() {
     var x = document.getElementById("timeline");
     var y = document.getElementById("return");
-    if (x.style.display === "none") {
+    console.log(`display: ${x.style.display}`);
+    if (x.style.display !== "block") {
         x.style.display = "block";
         y.style.display = "block";
         x.style.width = "100%";
@@ -12,4 +13,3 @@ function toggleTimelineVisibility() {
         x.style.width = "25%";
     }
 }
-toggleTimelineVisibility();
