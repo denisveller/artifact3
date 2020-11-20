@@ -64,6 +64,7 @@ div.bilingual-heading{
 .passive{
     display: none;
     background: transparent !important;
+    margin-top: -5%;
     /*font-size: small;*/
 }
 .passive:hover{
