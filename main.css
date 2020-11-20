@@ -122,6 +122,19 @@ nav.accent{
 hr.accent{
     background: rgb(170,0,0);
 }
+.drt:hover{
+    background-color: rgb(53, 58, 63);
+    color: white;
+}
+.drt{
+    color: rgb(154, 157, 159);
+}
+.nav-link:hover .bilingual-nav, .nav-link.hover .bilingual-nav{
+    background: rgb(170,0,0);
+}
+.drt:hover .bilingual-nav, .drt.hover .bilingual-nav{
+    background: rgb(170,0,0);
+}
 span.accent{
     color: rgb(170,0,0) !important;
 }
@@ -145,13 +158,7 @@ span.accent{
 .dropdown-menu{
     background-color: rgb(53, 58, 63);
 }
-.drt:hover{
-    background-color: rgb(53, 58, 63);
-    color: white;
-}
-.drt{
-    color: rgb(154, 157, 159);
-}
+
 .btn-secondary{
     background-color: rgb(53, 58, 63);
 }
