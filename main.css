@@ -140,6 +140,12 @@ span.accent{
 .ispybottom{
     margin-bottom: 100px;
 }
+.dropdown-menu{
+    background-color: rgb(53, 58, 63);
+}
+.drt{
+    color: rgb(154, 157, 159);
+}
 @media only screen and (max-width: 1500px){
     .poetron{
         width: 75%;
