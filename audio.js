@@ -7,18 +7,17 @@ var e3 = document.getElementById('e3');
 var r4 = document.getElementById('r4');
 var e4 = document.getElementById('e4');
 function playAudio(x){
-    console.log(x);
-    pauseAudio(e1);
-    pauseAudio(r1);
-    pauseAudio(e2);
-    pauseAudio(r2);
-    pauseAudio(e3);
-    pauseAudio(r3);
-    pauseAudio(e4);
-    pauseAudio(r4);
+    pauseAudio();
+    x.currentTime = 0;
     x.play();
 }
-function pauseAudio(x){
-    x.pause();
-    x.currentTime = 0;
+function pauseAudio(){
+    e1.pause();
+    e2.pause();
+    e3.pause();
+    e4.pause();
+    r1.pause();
+    r2.pause();
+    r3.pause();
+    r4.pause();
 }
