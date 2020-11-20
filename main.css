@@ -47,6 +47,7 @@ div.bilingual-heading{
 .timeline{
     height: 100vh;
     background-color: rgb(36, 39, 42) !important;
+
 }
 .timeline-body{
     padding-left: 10%;
@@ -60,7 +61,7 @@ div.bilingual-heading{
 .passive{
     display: none;
     background: transparent !important;
-    font-size: small;
+    /*font-size: small;*/
 }
 .passive:hover{
     background: transparent !important;
@@ -85,9 +86,6 @@ div.bilingual-heading{
 .p-head:hover{
     background: transparent !important;
     color: white;
-}
-.p-bod{
-    font-size: small; 
 }
 .blurb{
     padding: 5%;
@@ -145,6 +143,9 @@ span.accent{
 }
 .drt{
     color: rgb(154, 157, 159);
+}
+.btn-secondary{
+    background-color: rgb(53, 58, 63);
 }
 @media only screen and (max-width: 1500px){
     .poetron{
