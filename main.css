@@ -141,11 +141,19 @@ span.accent{
 .dropdown-menu{
     background-color: rgb(53, 58, 63);
 }
+.drt:hover{
+    background-color: rgb(53, 58, 63);
+    color: white;
+}
 .drt{
     color: rgb(154, 157, 159);
 }
 .btn-secondary{
     background-color: rgb(53, 58, 63);
+}
+.bib{
+    text-indent: -5%;
+    padding-left: 5%;
 }
 @media only screen and (max-width: 1500px){
     .poetron{
