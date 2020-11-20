@@ -18,6 +18,9 @@ hr.bilingual-nav{
 a.bilingual-nav{
     text-align: center;
 }
+.nav-link:hover{
+    color: white !important;
+}
 .dark-theme{
     background-color: RGB(19,20,20);
     color: white;
